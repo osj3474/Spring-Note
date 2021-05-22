@@ -12,4 +12,4 @@
 - getter & setter 자동 추가 : cmd + N
 - 빌드만 하기 : cmd + F9
 - 파일 찾기 : cmd + shift + o
-- 안쓰는 import 제거 : cmd + option + o
+- 안쓰는 import 제거 : ctrl + option + o
