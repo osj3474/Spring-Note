@@ -17,15 +17,6 @@ public class MyEventHandler {
         System.out.println("이벤트 발생 / 데이터 : " + event.getData());
     }
 
-    @EventListener
-    public void handle(ContextRefreshedEvent event){
-        System.out.println("ContextRefreshedEvent");
-    }
-
-    @EventListener
-    public void handle(ContextClosedEvent event){
-        System.out.println("ContextRefreshedEvent");
-    }
 
 
 }
