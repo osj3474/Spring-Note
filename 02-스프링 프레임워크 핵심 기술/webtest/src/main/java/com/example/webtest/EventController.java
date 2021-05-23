@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class EventController {
-    @InitBinder     // 이걸로 바인더를 등록하는 것임.
-    public void init(WebDataBinder webDataBinder){
-        webDataBinder.registerCustomEditor(Event.class, new EventProperty());
-    }
+//    @InitBinder     // 이걸로 바인더를 등록하는 것임.
+//    public void init(WebDataBinder webDataBinder){
+//        webDataBinder.registerCustomEditor(Event.class, new EventProperty());
+//    }
 
     @GetMapping("/event/{event}")
     public String getEvent(@PathVariable Event event){
