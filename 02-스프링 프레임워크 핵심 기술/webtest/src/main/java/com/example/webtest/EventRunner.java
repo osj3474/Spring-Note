@@ -8,12 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class EventRunner implements ApplicationRunner {
     @Autowired
-    EventService eventService;  // Autowired는 되도록 Interface로 받기!!
+    EventService eventService;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        eventService.createEvent();
-        eventService.publishEvent();
-        eventService.deleteEvent();
+        String greeting = eventService.helloName(null);
     }
 }

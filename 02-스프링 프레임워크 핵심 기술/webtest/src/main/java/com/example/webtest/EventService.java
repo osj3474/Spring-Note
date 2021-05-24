@@ -1,7 +1,12 @@
 package com.example.webtest;
 
-public interface EventService {
-    public void createEvent();
-    public void publishEvent();
-    public void deleteEvent();
+import org.springframework.lang.NonNull;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EventService {
+    @NonNull
+    public String helloName(@NonNull String name){
+        return "Hello, " + name;
+    }
 }
