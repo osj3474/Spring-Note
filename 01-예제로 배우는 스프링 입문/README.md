@@ -3,7 +3,7 @@
 # 목차
 
 1. [프로젝트 설정](#1-프로젝트-설정-)
-2. [application.properties](#2-applicationpropertiest-)
+2. [application.properties](#2-applicationproperties-)
 3. [IoC](#3-IoC-)
 4. [IoC 컨테이너](#4-ioc-컨테이너-)
 5. [Bean](#5-bean-)
