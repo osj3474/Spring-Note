@@ -2161,3 +2161,9 @@ cf) 단, intellij 사용자의 경우, 에러표시가 따로 나지 않는 경�
       }
    }
    ```
+
+   또는
+   *application.properties*
+   ```java
+   spring.main.web-application-type=none
+   ```
