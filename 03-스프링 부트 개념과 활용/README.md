@@ -404,3 +404,37 @@ cf) 추천 방법 확인하기 => <a href="https://github.com/osj3474/Spring-Not
 </details>
 
 그런데 위의 과정을 `ServletWebServerFactoryAutoConfiguration` 이 해준다. 그런데, 우리가 서블릿 컨테이너는 어떤거 쓰게 될지는 모르지만, 서블릿을 사용하는 것은 똑같다. 그래서 `DispatcherServletAutoConfiguration` 라고 해서 서블릿을 만들고 등록해주는 파일을 따로 있다.
+
+cf) port주기
+
+*application.properties*
+```java
+server.port = 9090    // 0은 랜덤 포트
+
+```
+
+
+<br />
+
+## 2) HTTPS, HTTP2 적용하기
+
+: 인증서부터 만든다.
+
+*generate-keystore.sh*
+```
+keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 4000
+```
+
+그러면, `keystore.p12` 가 생겼을텐데, 이걸로 application.properties에 설정 값을 지정해준다.
+
+
+*appcliation.properties*
+```
+server.ssl.key-store: keystore.p12
+server.ssl.key-store-password: 123456
+server.ssl.keyStoreType: PKCS12
+server.ssl.keyAlias: tomcat
+```
+
+
+
