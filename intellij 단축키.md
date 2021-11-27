@@ -14,3 +14,7 @@
 - 파일 찾기 : cmd + shift + o
 - 안쓰는 import 제거 : ctrl + option + o
 - import static : option + Enter
+- pretty format : option + command + L
+- test만들기 : command + shift + T
+- 커서가 있는 곳만 Run : control + shift + R
+- 외부 함수로 빼기 : option + control + M
