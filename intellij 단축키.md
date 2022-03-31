@@ -18,3 +18,4 @@
 - test만들기 : command + shift + T
 - 커서가 있는 곳만 Run : control + shift + R
 - 외부 함수로 빼기 : option + control + M
+- 포맷터 : option + control + L
